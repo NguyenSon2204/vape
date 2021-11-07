@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="webfonts">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/q&a.css">
+	<title>Q&A</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="row col-lg-12 px-lg-0 mx-lg-0 header_top d-md-none d-none d-lg-flex">
+				<div class="col-lg-8 px-lg-0 mx-lg-auto row header_top_container">
+					<div class="col-lg-6 px-lg-0 text-left">
+						<p>Welcome to The Heaven's Podsystem</p>
+					</div>
+					<div class="col-lg-6 px-lg-0 text-right language">
+						<ul>
+							<li>Select Language <i class="fas fa-chevron-down"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 px-lg-0 my-lg-2 mx-lg-auto col-md-12 my-md-2 mx-md-auto col-12 my-2 mx-auto row header_center_container">
+				<div class="col-lg-3 px-lg-0 col-md-6 px-md-0 col-6 px-0 header_center_container_logo">
+					<img src="image/ecadfe4ce6f44bc8a5876a31dd283b97.png" alt="">
+				</div>
+				<div class="col-lg-6 px-lg-0 d-lg-block d-md-none d-none header_center_container_menu">
+					<nav>
+						<ul>
+							<li>
+								<!-- <a href="index.html"><p style="color: black">HOME</p></a> -->
+								<div class="dropdown">
+									<button class="dropbtn"><p>Home</p></button>
+									<div class="dropdown-content">
+										<!-- <a href="#">Shop Detail</a>
+										<a href="#">Cart</a>
+										<a href="#">Checkout</a> -->
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn"><a class="text-decoration-none" href="shop.html"><p>Shop <i class="fas fa-chevron-down"></i></p></a></button>
+									<div class="dropdown-content">
+										<a href="shopdetail.html">Shop Detail</a>
+										<a href="cart.html">Cart</a>
+										<a href="checkout.html">Checkout</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn"><a class="text-decoration-none" href="blog.html"><p>Blog <i class="fas fa-chevron-down"></i></p></a></button>
+									<div class="dropdown-content">
+										<a href="blogdetail.html">Blog Detail</a>
+									</div>
+								</div>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn"><a class="text-decoration-none" href="about.html"><p>About</p></a></button>
+									<div class="dropdown-content">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn"><a class="text-decoration-none" href="q&a.html"><p>Q&A</p></a></button>
+									<div class="dropdown-content">
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="new new1">
+							<p>New <i class="fas fa-sort-down"></i></p>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-3 px-lg-0 col-md-6 px-md-0 col-6 px-0 text-right header_center_container_icon">
+					<i class="fas fa-user-friends d-lg-inline-block d-md-none d-none"></i>
+					<div class="d-lg-inline-block d-md-none d-none fas_hear">
+						<i class="fas fa-heart"></i>
+						<div class="quantity qt1 d-lg-inline-block d-md-none d-none">9</div>
+					</div>
+					<div class="d-inline-block fas_shop">
+						<a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+						<div class="quantity qt2">3</div>
+					</div>
+					<span class="bar"><i class="fas fa-bars d-lg-none d-md-inline-block d-inline-block"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-8 px-lg-0 mx-lg-auto my-lg-4 col-md-12 mx-md-auto my-md-4 col-12 mx-auto my-4 row header__bottom__container">
+				<div class="col-lg-3 pl-lg-0 col-md-12 px-md-0 col-12 px-0 header__bottom__container_left">
+					<button><span class="list_category_item mr-lg-1 mr-md-1 mr-1"><i class="fas fa-align-left"></i></span> CATEGORIES</button>
+					<nav class="list_category">
+						<ul class="border border-top-0">
+							<li><a href="">Search terms</a></li>
+							<li><a href="">Advanced Search</a></li>
+							<li><a href="">Help & Faq</a></li>
+							<li><a href="">Store Location</a></li>
+							<li><a href="">Orders & Returns</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-6 d-lg-block d-md-none d-none header_bottom_container_center">
+					<div class="search_container">
+						<input type="text" placeholder="Search product...">
+						<span><button><i class="fas fa-search"></i></button></span>
+					</div>
+				</div>
+				<div class="col-lg-3 pr-lg-0 d-md-none d-none d-lg-inline-block text-right header_bottom_container_right">
+					<p>Call Us: <strong>0394491200</strong></p>
+				</div>
+			</div>
+			<div class="d-lg-none menu_responsive">
+				<div class="menu__responsive__container animate__animated">
+					<span class="close"><i class="fas fa-times d-lg-none d-md-inline-block"></i></span>
+					<ul class="ul_select_res">
+						<li>Select Language <i class="fas fa-chevron-down"></i></li>
+					</ul>
+					<div class="menu_res_btn">
+						<input type="text" placeholder="Search our store">
+						<button><i class="fas fa-search"></i></button>
+					</div>
+					<div class="icon_top_res">
+						<i class="fas fa-user-friends"></i>
+						<div class="d-inline-block fas_hear_res">
+						<i class="fas fa-heart"></i>
+						<div class="quantity_res qt1_res d-inline-block">9</div>
+						</div>
+						<div class="d-inline-block fas_shop_res">
+							<a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+						<div class="quantity_res qt2_res">3</div>
+						</div>
+					</div>
+					<nav>
+						<ul class="">
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="shop.html">SHOP</a><span class="plus"><i class="fas fa-plus"></i></span><span class="minus"><i class="fas fa-minus"></i></span>
+								<ul class="ul_res2">
+									<li><a href="shopdetail.html">Shop Detail</a></li>
+									<li><a href="cart.html">Cart</a></li>
+									<li><a href="checkout.html">Check Out</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">BLOG</a><span class="plus"><i class="fas fa-plus"></i></span><span class="minus"><i class="fas fa-minus"></i></span>
+								<ul class="ul_res2">
+									<li><a href="blogdetail.html">Blog Detail</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="q&a.html">Q&A</a></li>
+						</ul>
+					</nav>
+					<div class="icon_bottom_res">
+						<div><a href=" https://www.facebook.com/profile.php?id=100008008861522"><i class="fab fa-facebook-f"></i></a></div>
+						<div><i class="fab fa-twitter"></i></div>
+						<div><i class="fab fa-youtube"></i></div>
+						<div><i class="fab fa-google-plus-g"></i></div>
+						<div><i class="fab fa-instagram"></i></div>
+					</div>
+				</div>
+			</div>
+			<div class="row main">
+				<div class="col-lg-12 px-lg-0 mx-lg-auto col-md-12 px-md-0 mx-md-auto col-12 px-0 mx-auto main_qa_r1">
+					<p>Home > Q&A</p>
+				</div>
+				<div class="col-lg-12 px-lg-0 mx-lg-auto col-md-12 px-md-0 mx-md-auto col-12 px-0 mx-auto main_qa_r2">
+					<div class="col-lg-8 px-lg-0 mx-auto col-md-12 mx-auto col-12 mx-auto">
+						<h5>Frequenly Question</h5>
+						<p class="title_note">Bellow are frequenly asked question, you may find the answer for your self </p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iste nostrum incidunt, accusantium qui illo dolor consequuntur magni ea velit unde, ducimus labore, distinctio deleniti eum placeat voluptatem corporis inventore. Eum praesentium quo repudiandae animi accusamus nostrum cupiditate voluptates id tempora, quidem, dignissimos vel, officia consectetur ad quisquam, natus veritatis!</p>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Mauris congue euismod purus at semper. Morbi et vulputate massa?
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">A quoi servent les questionnaires ?
+									</button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.
+								</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Quels elements doit-on inclure dans un questionnaire ?
+									</button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.</div>
+							</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Quelle est la difference entre un questionnaire et un sondage ?
+									</button>
+								</h2>
+								<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingFive">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">Comment creer un questionnaire ?
+									</button>
+								</h2>
+								<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingSix">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Autem, hic.?
+									</button>
+								</h2>
+								<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos, reiciendis aut autem accusantium ipsum odit! Velit dignissimos sit labore repudiandae quidem eum eaque exercitationem molestias ipsum nulla veritatis minima tenetur sint pariatur repellat numquam expedita delectus, mollitia quibusdam quasi ad quaerat quia. Blanditiis, molestiae tempore iusto reiciendis facilis totam.</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="row" id="footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
+			<div class="col-lg-8 px-lg-0 mx-lg-auto col-md-12 mx-auto col-12 mx-md-auto row footer__top">
+				<div class="col-lg-4 px-lg-0 col-md-5 px-lg-0 col-12 px-0">
+					<a href="index.html"><img src="image/ecadfe4ce6f44bc8a5876a31dd283b97.png" alt=""></a>
+					<ul>
+						<li><i class="fas fa-home"></i> No: 58A, your Street, Baltimore, USA 4508</li>
+						<li><i class="fas fa-phone-alt"></i> 0394491200</li>
+						<li><i class="fas fa-envelope"></i> abc@gmail.com</li>
+					</ul>
+					<div class="footer__top_icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-google-plus-g"></i>
+					</div>
+				</div>
+				<div class="col-lg-2 px-lg-0 col-md-3 px-md-0 col-12 px-0">
+					<h6>INFORMATION</h6>
+					<ul>
+						<li>Information</li>
+						<li>Advanced Search</li>
+						<li>Helps & Faq</li>
+						<li>Store Location</li>
+						<li>Orders & Returns</li>
+						<li>Deliveries</li>
+						<li>Refund & Returns</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 px-lg-0 col-md-3 px-md-0 col-12 px-0">
+					<h6>OUR COMPANY</h6>
+					<ul>
+						<li>Delivery</li>
+						<li>Legan Notice</li>
+						<li>Sitemap</li>
+						<li>Secure Payment</li>
+						<li>Blog</li>
+						<li>About Us</li>
+						<li>Carrers</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 px-lg-0 col-md-3 mt-md-4 mt-lg-0 col-12 px-0">
+					<h6>MY ACCOUNT</h6>
+					<ul>
+						<li>Information</li>
+						<li>Advanced Search</li>
+						<li>Helps & Faq</li>
+						<li>Store Location</li>
+						<li>Orders & Returns</li>
+						<li>Deliveries</li>
+						<li>Refund & Returns</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 px-lg-0 col-md-3 px-md-0 mt-md-4 mt-lg-0 col-12 px-0">
+					<h6>OPENING TIME</h6>
+					<ul>
+						<li>Mon-Fri: 8-10PM</li>
+						<li>Sat: 9-8PM</li>
+						<li>Suns: 14-18PM</li>
+						<li>Mon-Fri: 8-10PM</li>
+						<li>We Work Holidays</li>
+						<li><b>Download App</b></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-8 px-lg-0 mx-lg-auto col-md-12 mx-md-auto col-12 mx-auto row footer__bottom">
+				<div class="col-lg-6 px-lg-0 col-md-6 col-12">
+					<p>Copyright<i class="far fa-copyright"></i> <span>HasTHemes</span>. All rights Reserved</p>
+				</div>
+				<div class="col-lg-6 px-lg-0 col-md-6 col-12 text-right text_right_footer">
+					<img src="image/payment1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="back-to-top">
+		<i class="fas fa-chevron-up"></i>
+	</div>
+	</div>
+</div>
+<script src="js/q&a.js"></script>
+<script src="js/all.js"></script>
+
+</body>
+</html>
